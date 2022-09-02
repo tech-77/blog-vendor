@@ -1,0 +1,20 @@
+                    @media (min-width: 1168px) {
+                      <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/> {
+                        background-image: url(<b:eval expr='resizeImage(data:post.featuredImage, 256, &quot;1:1&quot;).cssEscaped'/>);
+                      }
+                    }
+                    @media (min-width: 969px) and (max-width: 1167px) {
+                      <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/> {
+                        background-image: url(<b:eval expr='resizeImage(data:post.featuredImage, 1167, &quot;3:2&quot;).cssEscaped'/>);
+                      }
+                    }
+                    @media (min-width: 601px) and (max-width: 968px) {
+                      <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/> {
+                        background-image: url(<b:eval expr='resizeImage(data:post.featuredImage, 968, &quot;3:2&quot;).cssEscaped'/>);
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/> {
+                        background-image: url(<b:eval expr='resizeImage(data:post.featuredImage, 600, &quot;3:2&quot;).cssEscaped'/>);
+                      }
+                    }
